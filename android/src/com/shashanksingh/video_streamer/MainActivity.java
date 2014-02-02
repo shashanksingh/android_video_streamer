@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.Button;
 
 public class MainActivity extends Activity {
@@ -19,6 +20,30 @@ public class MainActivity extends Activity {
 		Button buttonPlay = (Button) findViewById(R.id.play);
 		Button buttonSignup = (Button) findViewById(R.id.signup);
 		Button buttonLogin = (Button) findViewById(R.id.login);
+		
+		buttonPlay.setOnClickListener(new OnClickListener(){
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
+		
+		buttonSignup.setOnClickListener(new OnClickListener(){
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
+		
+		buttonLogin.setOnClickListener(new OnClickListener(){
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
 				
 	}
 
