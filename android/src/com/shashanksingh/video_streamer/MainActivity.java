@@ -1,6 +1,6 @@
-//One login page [Activity]
-//One Singup page [Activity]
-//One page to play videos [Activity]
+//One login page [Activity] -- Views Done
+//One Singup page [Activity] -- Views Done
+//One page to play videos [Activity] -- Views Done
 package com.shashanksingh.video_streamer;
 
 import android.os.Bundle;
