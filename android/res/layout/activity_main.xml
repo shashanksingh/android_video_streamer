@@ -27,17 +27,17 @@
         android:text="Play" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/login"
         android:layout_width="88dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:text="Login" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button1"
+        android:layout_alignLeft="@+id/login"
         android:layout_below="@+id/linearLayout1"
         android:layout_marginTop="19dp"
         android:text="Signup" />

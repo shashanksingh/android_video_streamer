@@ -6,6 +6,8 @@ package com.shashanksingh.video_streamer;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends Activity {
 
@@ -13,7 +15,11 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		buttonLogin = findViewById(R.id.)
+		//buttonLogin = findViewById(R.id.)
+		Button buttonPlay = (Button) findViewById(R.id.play);
+		Button buttonSignup = (Button) findViewById(R.id.signup);
+		Button buttonLogin = (Button) findViewById(R.id.login);
+				
 	}
 
 	@Override
