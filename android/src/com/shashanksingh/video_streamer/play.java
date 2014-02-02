@@ -9,7 +9,7 @@ public class play extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 	    super.onCreate(savedInstanceState);
-	
+	    setContentView(R.layout.play);
 	    // TODO Auto-generated method stub
 	}
 

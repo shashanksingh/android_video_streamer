@@ -9,7 +9,7 @@ public class login extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 	    super.onCreate(savedInstanceState);
-	
+	    setContentView(R.layout.login);
 	    // TODO Auto-generated method stub
 	}
 
