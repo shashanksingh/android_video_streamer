@@ -13,10 +13,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/linearLayout1"
-        android:layout_toRightOf="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
         android:orientation="vertical" >
-    
-
 
     <Button
         android:id="@+id/button3"
@@ -30,11 +28,9 @@
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="wrap_content"
+        android:layout_width="88dp"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/linearLayout1"
         android:layout_marginLeft="16dp"
-        android:layout_toRightOf="@+id/linearLayout1"
         android:text="Login" />
 
     <Button
