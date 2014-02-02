@@ -25,14 +25,16 @@ public class MainActivity extends Activity {
 		buttonPlay.setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View arg0) {
-				Intent intent = new Intent(MainActivity.this,play.class);	
+				Intent intent = new Intent(MainActivity.this,play.class);
+				startActivity(intent);
 			}
 		});
 		
 		buttonSignup.setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View arg0) {
-				Intent intent = new Intent(MainActivity.this,signup.class);	
+				Intent intent = new Intent(MainActivity.this,signup.class);
+				startActivity(intent);
 			}
 		});
 		
@@ -40,6 +42,7 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				Intent intent = new Intent(MainActivity.this,login.class);
+				startActivity(intent);
 			}
 		});
 				
