@@ -233,7 +233,6 @@ containing a value of this type.
         public static final int bottom=0x7f040005;
         public static final int button1=0x7f040014;
         public static final int button2=0x7f040015;
-        public static final int button3=0x7f040013;
         public static final int center=0x7f04000c;
         public static final int center_horizontal=0x7f04000a;
         public static final int center_vertical=0x7f040008;
@@ -248,6 +247,7 @@ containing a value of this type.
         public static final int horizontal=0x7f040000;
         public static final int left=0x7f040006;
         public static final int linearLayout1=0x7f040012;
+        public static final int play=0x7f040013;
         public static final int right=0x7f040007;
         public static final int start=0x7f040010;
         public static final int textView1=0x7f040018;

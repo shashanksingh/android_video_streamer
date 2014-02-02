@@ -20,7 +20,6 @@ int id alignMargins 0x7f040003
 int id bottom 0x7f040005
 int id button1 0x7f040014
 int id button2 0x7f040015
-int id button3 0x7f040013
 int id center 0x7f04000c
 int id center_horizontal 0x7f04000a
 int id center_vertical 0x7f040008
@@ -35,6 +34,7 @@ int id fill_vertical 0x7f040009
 int id horizontal 0x7f040000
 int id left 0x7f040006
 int id linearLayout1 0x7f040012
+int id play 0x7f040013
 int id right 0x7f040007
 int id start 0x7f040010
 int id textView1 0x7f040018
