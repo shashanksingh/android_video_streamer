@@ -227,7 +227,7 @@ containing a value of this type.
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f040016;
+        public static final int action_settings=0x7f040019;
         public static final int alignBounds=0x7f040002;
         public static final int alignMargins=0x7f040003;
         public static final int bottom=0x7f040005;
@@ -239,6 +239,8 @@ containing a value of this type.
         public static final int center_vertical=0x7f040008;
         public static final int clip_horizontal=0x7f04000f;
         public static final int clip_vertical=0x7f04000e;
+        public static final int editText1=0x7f040016;
+        public static final int editText2=0x7f040017;
         public static final int end=0x7f040011;
         public static final int fill=0x7f04000d;
         public static final int fill_horizontal=0x7f04000b;
@@ -248,6 +250,7 @@ containing a value of this type.
         public static final int linearLayout1=0x7f040012;
         public static final int right=0x7f040007;
         public static final int start=0x7f040010;
+        public static final int textView1=0x7f040018;
         public static final int top=0x7f040004;
         public static final int vertical=0x7f040001;
     }
