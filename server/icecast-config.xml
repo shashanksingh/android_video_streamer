@@ -1,0 +1,56 @@
+<icecast>
+    <limits>
+        <clients>600</clients>
+        <sources>2</sources>
+        <threadpool>5</threadpool>
+        <queue-size>524288</queue-size>
+        <client-timeout>0</client-timeout>
+        <header-timeout>15</header-timeout>
+        <source-timeout>0</source-timeout>
+        <burst-on-connect>1</burst-on-connect>
+        <burst-size>65535</burst-size>
+    </limits>
+
+    <authentication>
+        <source-password>boom</source-password>
+        <relay-password>boom</relay-password>
+        <admin-user>admin</admin-user>
+        <admin-password>boom</admin-password>
+    </authentication>
+    
+    <directory> 
+        <yp-url-timeout>15</yp-url-timeout>
+        <yp-url>http://dir.xiph.org/cgi-bin/yp-cgi</yp-url>
+    </directory> 
+     
+
+    <hostname>streamer-01</hostname>
+
+    <listen-socket>
+        <port>8000</port>
+    </listen-socket>
+
+    <mount>
+        <mount-name>/stream1.mp3</mount-name>
+        <username>sphynx</username>
+        <password>boom</password>
+    </mount>
+
+    <fileserve>1</fileserve>
+
+    <paths>
+        <logdir>/tmp</logdir>
+        <webroot>/home/sphynx/icecast-2.3.2/web</webroot>
+        <adminroot>/home/sphynx/icecast-2.3.2/admin</adminroot>
+        <pidfile>/tmp/icecast.pid</pidfile> 
+        <alias source="/" dest="/status.xsl"/>
+    </paths>
+
+    <logging>
+       <accesslog>icecast2/access.log</accesslog>
+       <errorlog>icecast2/error.log</errorlog>
+      <loglevel>3</loglevel>
+      <logsize>10000</logsize>
+      <logarchive>1</logarchive> 
+    </logging>
+</icecast>

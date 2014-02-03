@@ -1,1 +1,2 @@
 sudo apt-get install icecast2
+mkdir /tmp/icecast2/
