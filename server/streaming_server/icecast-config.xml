@@ -24,15 +24,15 @@
     </directory> 
      
 
-    <hostname>streamer-01</hostname>
+    <hostname>localhost</hostname>
 
     <listen-socket>
         <port>8000</port>
     </listen-socket>
 
     <mount>
-        <mount-name>/stream1.mp3</mount-name>
-        <username>sphynx</username>
+        <mount-name>/jamie.webm</mount-name>
+        <username>shashank</username>
         <password>boom</password>
     </mount>
 
