@@ -40,9 +40,9 @@
 
     <paths>
         <logdir>/tmp</logdir>
-        <webroot>/home/sphynx/icecast-2.3.2/web</webroot>
-        <adminroot>/home/sphynx/icecast-2.3.2/admin</adminroot>
-        <pidfile>/tmp/icecast.pid</pidfile> 
+        <webroot>/home/shashank/code/android_video_streamer/server/streaming_server/web</webroot>
+        <adminroot>/home/shashank/code/android_video_streamer/server/streaming_server/admin</adminroot>
+        <pidfile>/tmp/icecast2/icecast.pid</pidfile> 
         <alias source="/" dest="/status.xsl"/>
     </paths>
 
