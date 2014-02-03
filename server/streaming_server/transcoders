@@ -1,0 +1,1 @@
+gst-launch-1.0 v4l2src ! video/x-raw,width=320,height=240 ! vp8enc ! webmmux ! shout2send ip=127.0.0.1 port=8000 password=boom mount=/test.webm
