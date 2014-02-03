@@ -1,0 +1,3 @@
+echo "Running Icecast in background...."
+icecast2 -b -c icecast-config.xml
+echo "Done"
