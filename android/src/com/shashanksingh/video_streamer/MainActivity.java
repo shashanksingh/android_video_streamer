@@ -17,6 +17,11 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+	    mPlusClient = new PlusClient.Builder(this, this, this)
+        .setActions("http://schemas.google.com/AddActivity", "http://schemas.google.com/BuyActivity")
+        .build();
+	    
+	    findViewById(R.id.sign_in_button).setOnClickListener(this);
 		//buttonLogin = findViewById(R.id.)
 		Button buttonPlay = (Button) findViewById(R.id.play);
 		Button buttonSignup = (Button) findViewById(R.id.signup);
