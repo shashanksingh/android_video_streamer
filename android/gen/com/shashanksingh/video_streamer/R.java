@@ -30,9 +30,9 @@ public final class R {
         public static final int Three=0x7f08000c;
         public static final int Two=0x7f08000b;
         public static final int action_settings=0x7f08000e;
-        public static final int editText1=0x7f080005;
-        public static final int editText2=0x7f080007;
+        public static final int email=0x7f080005;
         public static final int login=0x7f080001;
+        public static final int password=0x7f080007;
         public static final int play=0x7f080002;
         public static final int signup=0x7f080000;
         public static final int submit=0x7f080008;
