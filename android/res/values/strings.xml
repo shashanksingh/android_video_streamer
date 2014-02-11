@@ -4,5 +4,13 @@
     <string name="app_name">video_streamer</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="bollywood">bollywood</string>
+    <string name="info">info</string>
+    <string name="khabar">khabar</string>
+    <string name="news">news</string>
+    <string name="play">play</string>
+    <string name="login">login</string>
+    <string name="signup">singup</string>
 
 </resources>
+
