@@ -57,7 +57,7 @@ public class play extends Activity {
 		Three.setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View arg0) {
-			    String URL = "http://techslides.com/demos/sample-videos/small.3gp";
+			    String URL= "http://techslides.com/demos/sample-videos/small.3gp";
 			    Uri uri = Uri.parse(URL); //Declare your Url here.
 			    VideoView mVideoView  = (VideoView)findViewById(R.id.videoView1);
 			    mVideoView.pause();
