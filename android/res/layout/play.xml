@@ -12,6 +12,12 @@
         android:layout_height="0dip"
         android:layout_weight="0.68" />
 
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You are watching" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
