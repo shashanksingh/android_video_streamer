@@ -21,10 +21,10 @@ public class play extends Activity {
 	    //String SD_CARD_PATH = Environment.getExternalStorageDirectory().toString();
 	    //String URL = SD_CARD_PATH + "627.mp4";
 	    //String URL = "http://www.pocketjourney.com/downloads/pj/video/famous.3gp";
-		Button One = (Button) findViewById(R.id.One);
-		Button Two = (Button) findViewById(R.id.Two);
-		Button Three = (Button) findViewById(R.id.Three);
-		Button Four = (Button) findViewById(R.id.Four);
+		Button One = (Button) findViewById(R.id.info);
+		Button Two = (Button) findViewById(R.id.news);
+		Button Three = (Button) findViewById(R.id.bollywood);
+		Button Four = (Button) findViewById(R.id.khabar);
 		
 		One.setOnClickListener(new OnClickListener(){
 			@Override

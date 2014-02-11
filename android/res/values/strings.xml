@@ -11,6 +11,9 @@
     <string name="play">play</string>
     <string name="login">login</string>
     <string name="signup">singup</string>
+    <string name="youarewatching">you are watching</string>
+    <string name="watchlive">Watch Live Channels from Siti Kolkata</string>
+    <string name="logo">Sity</string>
 
 </resources>
 
