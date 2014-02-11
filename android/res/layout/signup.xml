@@ -14,14 +14,14 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign-up"
+        android:text="@string/signup"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Email"
+        android:text="@string/email"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
@@ -29,16 +29,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName" >
+        android:inputType="textEmailAddress" >
 
-        <requestFocus />
+      <requestFocus />
     </EditText>
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Password"
+        android:text="@string/password"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
@@ -52,7 +52,7 @@
         android:id="@+id/submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Submit" />
+        android:text="@string/submit" />
 
  </LinearLayout>
 

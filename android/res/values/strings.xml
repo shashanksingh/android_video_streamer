@@ -13,7 +13,10 @@
     <string name="signup">singup</string>
     <string name="youarewatching">you are watching</string>
     <string name="watchlive">Watch Live Channels from Siti Kolkata</string>
-    <string name="logo">Sity</string>
+    <string name="logo">Sity Cable</string>
+    <string name="submit">submit</string>
+    <string name="password">password</string>
+    <string name="email">email</string>
 
 </resources>
 
