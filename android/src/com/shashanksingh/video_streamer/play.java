@@ -31,7 +31,7 @@ public class play extends Activity {
 			    Uri uri = Uri.parse(URL); //Declare your Url here.
 			    VideoView mVideoView  = (VideoView)findViewById(R.id.videoView1);
 			    mVideoView.pause();
-			    mVideoView.setMediaController(new MediaController(play.this));       
+			    mVideoView.setMediaController(null);       
 			    mVideoView.setVideoURI(uri);
 			    mVideoView.requestFocus();
 			    mVideoView.start();
@@ -46,7 +46,7 @@ public class play extends Activity {
 			    Uri uri = Uri.parse(URL); //Declare your Url here.
 			    VideoView mVideoView  = (VideoView)findViewById(R.id.videoView1);
 			    mVideoView.pause();
-			    mVideoView.setMediaController(new MediaController(play.this));       
+			    mVideoView.setMediaController(null);       
 			    mVideoView.setVideoURI(uri);
 			    mVideoView.requestFocus();
 			    mVideoView.start();
@@ -59,7 +59,7 @@ public class play extends Activity {
 			    Uri uri = Uri.parse(URL); //Declare your Url here.
 			    VideoView mVideoView  = (VideoView)findViewById(R.id.videoView1);
 			    mVideoView.pause();
-			    mVideoView.setMediaController(new MediaController(play.this));       
+			    mVideoView.setMediaController(null);       
 			    mVideoView.setVideoURI(uri);
 			    mVideoView.requestFocus();
 			    mVideoView.start();
@@ -72,7 +72,7 @@ public class play extends Activity {
 			    Uri uri = Uri.parse(URL); //Declare your Url here.
 			    VideoView mVideoView  = (VideoView)findViewById(R.id.videoView1);
 			    mVideoView.pause();
-			    mVideoView.setMediaController(new MediaController(play.this));       
+			    mVideoView.setMediaController(null);       
 			    mVideoView.setVideoURI(uri);
 			    mVideoView.requestFocus();
 			    mVideoView.start();
