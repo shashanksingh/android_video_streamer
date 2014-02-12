@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
@@ -19,10 +20,10 @@ public class play extends Activity {
 	    //String SD_CARD_PATH = Environment.getExternalStorageDirectory().toString();
 	    //String URL = SD_CARD_PATH + "627.mp4";
 	    //String URL = "http://www.pocketjourney.com/downloads/pj/video/famous.3gp";
-		Button One = (Button) findViewById(R.id.info);
-		Button Two = (Button) findViewById(R.id.news);
-		Button Three = (Button) findViewById(R.id.bollywood);
-		Button Four = (Button) findViewById(R.id.khabar);
+		ImageView One = (ImageView) findViewById(R.id.info);
+		ImageView Two = (ImageView) findViewById(R.id.news);
+		ImageView Three = (ImageView) findViewById(R.id.bollywood);
+		ImageView Four = (ImageView) findViewById(R.id.khabar);
 		
 		One.setOnClickListener(new OnClickListener(){
 			@Override
