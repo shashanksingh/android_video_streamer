@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">video_streamer</string>
+    <string name="app_name">Cable TV</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-    <string name="bollywood">bollywood</string>
-    <string name="info">info</string>
-    <string name="khabar">khabar</string>
-    <string name="news">news</string>
-    <string name="play">play</string>
-    <string name="login">login</string>
-    <string name="signup">singup</string>
+    <string name="bollywood">Bollywood</string>
+    <string name="info">Info</string>
+    <string name="khabar">Khabar</string>
+    <string name="news">News</string>
+    <string name="play">Play</string>
+    <string name="login">Login</string>
+    <string name="signup">Signup</string>
     <string name="youarewatching">You Are Watching</string>
     <string name="watchlive">Watch Live Channels from Siti Kolkata</string>
     <string name="logo">Sity Cable</string>
-    <string name="submit">submit</string>
-    <string name="password">password</string>
-    <string name="email">email</string>
+    <string name="submit">Submit</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
 
 </resources>
 
