@@ -41,7 +41,7 @@ public class play extends Activity {
 				// TODO Auto-generated method stub
 				
 			}
-			});
+		});
 
 		
 		One.setOnClickListener(new OnClickListener(){
