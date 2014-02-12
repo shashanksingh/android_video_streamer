@@ -65,7 +65,7 @@ public class play extends Activity {
 				progressBar.setVisibility(View.VISIBLE);
 				One.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
 			    One.playSoundEffect(SoundEffectConstants.CLICK);
-			    String URL = "http://download.wavetlan.com/SVV/Media/HTTP/The_Simpsons_S19E05_Treehouse_of_Horror_XVIII.3GP";
+			    String URL = "http://download.wavetlan.com/SVV/Media/HTTP/H264/Other_Media/H264_test5_voice_3gp_480x360.3gp";
 			    Uri uri = Uri.parse(URL); //Declare your Url here  
 			    mVideoView.pause();
 			    mVideoView.setMediaController(null);       
