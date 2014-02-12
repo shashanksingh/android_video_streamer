@@ -36,16 +36,17 @@ public final class R {
         public static final int slqsm=0x7f02000c;
     }
     public static final class id {
-        public static final int action_settings=0x7f08000f;
-        public static final int bollywood=0x7f08000d;
+        public static final int action_settings=0x7f080010;
+        public static final int bollywood=0x7f08000e;
         public static final int email=0x7f080006;
         public static final int imageView1=0x7f080003;
-        public static final int info=0x7f08000b;
-        public static final int khabar=0x7f08000e;
+        public static final int info=0x7f08000c;
+        public static final int khabar=0x7f08000f;
         public static final int login=0x7f080001;
-        public static final int news=0x7f08000c;
+        public static final int news=0x7f08000d;
         public static final int password=0x7f080008;
         public static final int play=0x7f080002;
+        public static final int progressbar=0x7f08000b;
         public static final int signup=0x7f080000;
         public static final int submit=0x7f080009;
         public static final int textView1=0x7f080004;
