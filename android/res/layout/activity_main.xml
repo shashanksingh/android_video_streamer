@@ -15,7 +15,7 @@
         android:layout_alignLeft="@+id/login"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="36dp"
-        android:text="Signup" />
+        android:text="@string/signup" />
 
     <Button
         android:id="@+id/play"
@@ -40,6 +40,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="41dp"
+        android:contentDescription="@string/logo"
         android:src="@drawable/logo" />
 
 </RelativeLayout>
