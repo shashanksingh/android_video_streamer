@@ -3,6 +3,7 @@ package com.shashanksingh.video_streamer;
 import android.app.Activity;
 import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnPreparedListener;
+import android.media.MediaPlayer.OnVideoSizeChangedListener;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.HapticFeedbackConstants;
@@ -37,8 +38,19 @@ public class play extends Activity {
         mVideoView.setOnPreparedListener(new OnPreparedListener(){
 
 			@Override
-			public void onPrepared(MediaPlayer arg0) {
-				// TODO Auto-generated method stub
+			public void onPrepared(MediaPlayer mp) {
+				mp.start();
+				mp.setOnVideoSizeChangedListener(new OnVideoSizeChangedListener() {
+
+					@Override
+					public void onVideoSizeChanged(MediaPlayer arg0, int arg1,
+							int arg2) {
+						//Log.e(TAG, "Changed");
+						ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressbar);
+						progressBar.setVisibility(View.GONE);
+					}
+					
+				});
 				
 			}
 		});
