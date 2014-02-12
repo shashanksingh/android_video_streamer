@@ -6,6 +6,7 @@ import android.media.MediaPlayer.OnPreparedListener;
 import android.media.MediaPlayer.OnVideoSizeChangedListener;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.HapticFeedbackConstants;
 import android.view.SoundEffectConstants;
 import android.view.View;
@@ -32,20 +33,18 @@ public class play extends Activity {
 		final ImageView Two = (ImageView) findViewById(R.id.news);
 		final ImageView Three = (ImageView) findViewById(R.id.bollywood);
 		final ImageView Four = (ImageView) findViewById(R.id.khabar);
-		ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressbar);
 		final VideoView mVideoView  = (VideoView)findViewById(R.id.videoView1);
-		progressBar.setVisibility(View.VISIBLE);
         mVideoView.setOnPreparedListener(new OnPreparedListener(){
 
 			@Override
 			public void onPrepared(MediaPlayer mp) {
 				mp.start();
 				mp.setOnVideoSizeChangedListener(new OnVideoSizeChangedListener() {
-
+					
 					@Override
 					public void onVideoSizeChanged(MediaPlayer arg0, int arg1,
 							int arg2) {
-						//Log.e(TAG, "Changed");
+						Log.e("TAG", "Changed="+arg1+"*"+arg2);
 						ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressbar);
 						progressBar.setVisibility(View.GONE);
 					}
@@ -59,12 +58,14 @@ public class play extends Activity {
 		One.setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View arg0) {
+				ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressbar);
+				progressBar.setVisibility(View.VISIBLE);
 				One.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
 			    One.playSoundEffect(SoundEffectConstants.CLICK);
 			    String URL = "http://download.wavetlan.com/SVV/Media/HTTP/The_Simpsons_S19E05_Treehouse_of_Horror_XVIII.3GP";
 			    Uri uri = Uri.parse(URL); //Declare your Url here  
 			    mVideoView.pause();
-//			    mVideoView.setMediaController(null);       
+			    mVideoView.setMediaController(null);       
 			    mVideoView.setVideoURI(uri);
 			    mVideoView.requestFocus();
 			    mVideoView.start();
@@ -74,12 +75,14 @@ public class play extends Activity {
 		Two.setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View arg0) {
+				ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressbar);
+				progressBar.setVisibility(View.VISIBLE);
 				Two.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
 			    Two.playSoundEffect(SoundEffectConstants.CLICK);
 			    String URL = "http://www.pocketjourney.com/downloads/pj/video/famous.3gp";
 			    Uri uri = Uri.parse(URL); //Declare your Url here.
 			    mVideoView.pause();
-//			    mVideoView.setMediaController(null);       
+			    mVideoView.setMediaController(null);       
 			    mVideoView.setVideoURI(uri);
 			    mVideoView.requestFocus();
 			    mVideoView.start();
@@ -88,12 +91,14 @@ public class play extends Activity {
 		Three.setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View arg0) {
+				ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressbar);
+				progressBar.setVisibility(View.VISIBLE);
 				Three.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
 			    Three.playSoundEffect(SoundEffectConstants.CLICK);
 			    String URL= "http://techslides.com/demos/sample-videos/small.3gp";
 			    Uri uri = Uri.parse(URL); //Declare your Url here.
 			    mVideoView.pause();
-//			    mVideoView.setMediaController(null);       
+			    mVideoView.setMediaController(null);       
 			    mVideoView.setVideoURI(uri);
 			    mVideoView.requestFocus();
 			    mVideoView.start();
@@ -102,12 +107,15 @@ public class play extends Activity {
 		Four.setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View arg0) {
+				ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressbar);
+				progressBar.setVisibility(View.VISIBLE);
 				Four.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
 			    Four.playSoundEffect(SoundEffectConstants.CLICK);
-			    String URL = "http://download.wavetlan.com/SVV/Media/HTTP/H264/Other_Media/dolphins_1600k.3gp";
+//			    String URL = "http://download.wavetlan.com/SVV/Media/HTTP/H264/Other_Media/dolphins_1600k.3gp";
+			    String URL = "http://download.wavetlan.com/SVV/Media/HTTP/H264/Other_Media/H264_test6_voice_3gp_480x320.3gp";
 			    Uri uri = Uri.parse(URL); //Declare your Url here.
 			    mVideoView.pause();
-//			    mVideoView.setMediaController(null);       
+			    mVideoView.setMediaController(null);       
 			    mVideoView.setVideoURI(uri);
 			    mVideoView.requestFocus();
 			    mVideoView.start();
