@@ -26,14 +26,17 @@ public class play extends Activity {
 	    //We want as much space as possible
 	    requestWindowFeature(Window.FEATURE_NO_TITLE);
 	    setContentView(R.layout.play);
-	    //String SD_CARD_PATH = Environment.getExternalStorageDirectory().toString();
-	    //String URL = SD_CARD_PATH + "627.mp4";
-	    //String URL = "http://www.pocketjourney.com/downloads/pj/video/famous.3gp";
+
 		final ImageView One = (ImageView) findViewById(R.id.info);
 		final ImageView Two = (ImageView) findViewById(R.id.news);
 		final ImageView Three = (ImageView) findViewById(R.id.bollywood);
 		final ImageView Four = (ImageView) findViewById(R.id.khabar);
 		final VideoView mVideoView  = (VideoView)findViewById(R.id.videoView1);
+		
+		ProgressBar mProgressBar = (ProgressBar) findViewById(R.id.progressbar);
+	    mProgressBar.setProgress(0);
+	    mProgressBar.setMax(100);
+	    
         mVideoView.setOnPreparedListener(new OnPreparedListener(){
 
 			@Override
