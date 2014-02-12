@@ -26,28 +26,28 @@
          <ImageView
              android:id="@+id/info"
              android:layout_width="75dp"
-             android:layout_height="50dp"
+             android:layout_height="60dp"
              android:contentDescription="@string/info"
              android:src="@drawable/info" />
          
         <ImageView
             android:id="@+id/news"
             android:layout_width="75dp"
-            android:layout_height="50dp"
+            android:layout_height="60dp"
             android:contentDescription="@string/news"
             android:src="@drawable/news" />
         
        <ImageView
            android:id="@+id/bollywood"
            android:layout_width="75dp"
-           android:layout_height="50dp"
+           android:layout_height="60dp"
            android:contentDescription="@string/bollywood"
            android:src="@drawable/bollywood" />
 
         <ImageView
             android:id="@+id/khabar"
             android:layout_width="75dp"
-            android:layout_height="50dp"
+            android:layout_height="60dp"
             android:contentDescription="@string/khabar"
             android:src="@drawable/khabar" />
 
