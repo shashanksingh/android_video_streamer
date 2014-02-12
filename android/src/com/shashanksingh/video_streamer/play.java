@@ -1,13 +1,17 @@
 package com.shashanksingh.video_streamer;
 
 import android.app.Activity;
+import android.media.MediaPlayer;
+import android.media.MediaPlayer.OnPreparedListener;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.HapticFeedbackConstants;
 import android.view.SoundEffectConstants;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.Window;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 //import android.widget.MediaController;
 import android.widget.VideoView;
 
@@ -17,6 +21,8 @@ public class play extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 	    super.onCreate(savedInstanceState);
+	    //We want as much space as possible
+	    requestWindowFeature(Window.FEATURE_NO_TITLE);
 	    setContentView(R.layout.play);
 	    //String SD_CARD_PATH = Environment.getExternalStorageDirectory().toString();
 	    //String URL = SD_CARD_PATH + "627.mp4";
@@ -25,6 +31,17 @@ public class play extends Activity {
 		final ImageView Two = (ImageView) findViewById(R.id.news);
 		final ImageView Three = (ImageView) findViewById(R.id.bollywood);
 		final ImageView Four = (ImageView) findViewById(R.id.khabar);
+		ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressbar);
+		final VideoView mVideoView  = (VideoView)findViewById(R.id.videoView1);
+		progressBar.setVisibility(View.VISIBLE);
+        mVideoView.setOnPreparedListener(new OnPreparedListener(){
+
+			@Override
+			public void onPrepared(MediaPlayer arg0) {
+				// TODO Auto-generated method stub
+				
+			}
+			});
 
 		
 		One.setOnClickListener(new OnClickListener(){
@@ -33,10 +50,9 @@ public class play extends Activity {
 				One.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
 			    One.playSoundEffect(SoundEffectConstants.CLICK);
 			    String URL = "http://download.wavetlan.com/SVV/Media/HTTP/The_Simpsons_S19E05_Treehouse_of_Horror_XVIII.3GP";
-			    Uri uri = Uri.parse(URL); //Declare your Url here.
-			    VideoView mVideoView  = (VideoView)findViewById(R.id.videoView1);
+			    Uri uri = Uri.parse(URL); //Declare your Url here  
 			    mVideoView.pause();
-			    mVideoView.setMediaController(null);       
+//			    mVideoView.setMediaController(null);       
 			    mVideoView.setVideoURI(uri);
 			    mVideoView.requestFocus();
 			    mVideoView.start();
@@ -50,9 +66,8 @@ public class play extends Activity {
 			    Two.playSoundEffect(SoundEffectConstants.CLICK);
 			    String URL = "http://www.pocketjourney.com/downloads/pj/video/famous.3gp";
 			    Uri uri = Uri.parse(URL); //Declare your Url here.
-			    VideoView mVideoView  = (VideoView)findViewById(R.id.videoView1);
 			    mVideoView.pause();
-			    mVideoView.setMediaController(null);       
+//			    mVideoView.setMediaController(null);       
 			    mVideoView.setVideoURI(uri);
 			    mVideoView.requestFocus();
 			    mVideoView.start();
@@ -65,9 +80,8 @@ public class play extends Activity {
 			    Three.playSoundEffect(SoundEffectConstants.CLICK);
 			    String URL= "http://techslides.com/demos/sample-videos/small.3gp";
 			    Uri uri = Uri.parse(URL); //Declare your Url here.
-			    VideoView mVideoView  = (VideoView)findViewById(R.id.videoView1);
 			    mVideoView.pause();
-			    mVideoView.setMediaController(null);       
+//			    mVideoView.setMediaController(null);       
 			    mVideoView.setVideoURI(uri);
 			    mVideoView.requestFocus();
 			    mVideoView.start();
@@ -80,9 +94,8 @@ public class play extends Activity {
 			    Four.playSoundEffect(SoundEffectConstants.CLICK);
 			    String URL = "http://download.wavetlan.com/SVV/Media/HTTP/H264/Other_Media/dolphins_1600k.3gp";
 			    Uri uri = Uri.parse(URL); //Declare your Url here.
-			    VideoView mVideoView  = (VideoView)findViewById(R.id.videoView1);
 			    mVideoView.pause();
-			    mVideoView.setMediaController(null);       
+//			    mVideoView.setMediaController(null);       
 			    mVideoView.setVideoURI(uri);
 			    mVideoView.requestFocus();
 			    mVideoView.start();
