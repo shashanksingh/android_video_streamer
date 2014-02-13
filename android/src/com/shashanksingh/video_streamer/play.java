@@ -32,7 +32,6 @@ public class play extends Activity {
 		final ImageView Three = (ImageView) findViewById(R.id.bollywood);
 		final ImageView Four = (ImageView) findViewById(R.id.khabar);
 		final VideoView mVideoView  = (VideoView)findViewById(R.id.videoContent);
-		findViewById(R.id.youarewatching).setVisibility(View.GONE);
 		ProgressBar mProgressBar = (ProgressBar) findViewById(R.id.progressbar);
 	    mProgressBar.setProgress(0);
 //	    mProgressBar.setMax(100);
