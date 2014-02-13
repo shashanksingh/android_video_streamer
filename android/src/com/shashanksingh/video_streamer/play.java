@@ -31,11 +31,11 @@ public class play extends Activity {
 		final ImageView Two = (ImageView) findViewById(R.id.news);
 		final ImageView Three = (ImageView) findViewById(R.id.bollywood);
 		final ImageView Four = (ImageView) findViewById(R.id.khabar);
-		final VideoView mVideoView  = (VideoView)findViewById(R.id.videoView1);
-		
+		final VideoView mVideoView  = (VideoView)findViewById(R.id.videoContent);
+		findViewById(R.id.youarewatching).setVisibility(View.GONE);
 		ProgressBar mProgressBar = (ProgressBar) findViewById(R.id.progressbar);
 	    mProgressBar.setProgress(0);
-	    mProgressBar.setMax(100);
+//	    mProgressBar.setMax(100);
 	    
         mVideoView.setOnPreparedListener(new OnPreparedListener(){
 
@@ -61,6 +61,7 @@ public class play extends Activity {
 		One.setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View arg0) {
+				findViewById(R.id.youarewatching).setVisibility(View.VISIBLE);
 				ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressbar);
 				progressBar.setVisibility(View.VISIBLE);
 				One.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
@@ -78,6 +79,7 @@ public class play extends Activity {
 		Two.setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View arg0) {
+				findViewById(R.id.youarewatching).setVisibility(View.VISIBLE);
 				ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressbar);
 				progressBar.setVisibility(View.VISIBLE);
 				Two.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
@@ -94,11 +96,13 @@ public class play extends Activity {
 		Three.setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View arg0) {
+				findViewById(R.id.youarewatching).setVisibility(View.VISIBLE);
 				ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressbar);
 				progressBar.setVisibility(View.VISIBLE);
 				Three.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
 			    Three.playSoundEffect(SoundEffectConstants.CLICK);
 			    String URL= "http://techslides.com/demos/sample-videos/small.3gp";
+//			    String URL = "https://docs.google.com/file/d/0B2q41uezN4wgekRvcmNwMzduTjg";
 			    Uri uri = Uri.parse(URL); //Declare your Url here.
 			    mVideoView.pause();
 			    mVideoView.setMediaController(null);       
@@ -110,6 +114,7 @@ public class play extends Activity {
 		Four.setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View arg0) {
+				findViewById(R.id.youarewatching).setVisibility(View.VISIBLE);
 				ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressbar);
 				progressBar.setVisibility(View.VISIBLE);
 				Four.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
