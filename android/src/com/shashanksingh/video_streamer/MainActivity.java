@@ -3,15 +3,17 @@
 //One page to play videos [Activity] -- Views Done
 package com.shashanksingh.video_streamer;
 
+import android.media.MediaPlayer;
+import android.media.MediaPlayer.OnCompletionListener;
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
-import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.VideoView;
 
 public class MainActivity extends Activity {
@@ -28,7 +30,6 @@ public class MainActivity extends Activity {
 		VideoView videoView = (VideoView) findViewById(R.id.logoVideo);
 		
 		String fileName = "android.resource://"+  getPackageName() +"/drawable/channelid";
-//		String fileName = "http://www.pocketjourney.com/downloads/pj/video/famous.3gp";
 		videoView.setVideoURI(Uri.parse(fileName));
 		videoView.start();
 		
@@ -54,6 +55,18 @@ public class MainActivity extends Activity {
 				Intent intent = new Intent(MainActivity.this,login.class);
 				startActivity(intent);
 			}
+		});
+		
+		videoView.setOnCompletionListener(new OnCompletionListener(){
+
+			@Override
+			public void onCompletion(MediaPlayer arg0) {
+				VideoView videoView = (VideoView) findViewById(R.id.logoVideo);
+				ImageView imageView = (ImageView) findViewById(R.id.logoImage);
+				videoView.setVisibility(View.GONE);
+				imageView.setVisibility(View.VISIBLE);	
+			}
+			
 		});
 				
 	}

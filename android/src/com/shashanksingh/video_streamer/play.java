@@ -28,17 +28,15 @@ public class play extends Activity {
 		final ImageView Two = (ImageView) findViewById(R.id.news);
 		final ImageView Three = (ImageView) findViewById(R.id.bollywood);
 		final ImageView Four = (ImageView) findViewById(R.id.khabar);
-		final VideoView mVideoView  = (VideoView)findViewById(R.id.videoContent);
-		
-	    super.onConfigurationChanged(newConfig);
+		super.onConfigurationChanged(newConfig);
 
 	    // Checks the orientation of the screen
 	    if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
 	        Toast.makeText(this, "Making Video Full Screen", Toast.LENGTH_SHORT).show();
-	        One.setVisibility(0);
-	        Two.setVisibility(0);
-	        Three.setVisibility(0);
-	        Four.setVisibility(0);
+	        One.setVisibility(View.GONE);
+	        Two.setVisibility(View.GONE);
+	        Three.setVisibility(View.GONE);
+	        Four.setVisibility(View.GONE);
 			getWindow().clearFlags(WindowManager
 					.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN);
 			getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
