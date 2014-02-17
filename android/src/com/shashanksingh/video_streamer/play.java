@@ -61,7 +61,7 @@ public class play extends Activity {
 		One.setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View arg0) {
-				findViewById(R.id.youarewatching).setVisibility(View.VISIBLE);
+//				findViewById(R.id.youarewatching).setVisibility(View.VISIBLE);
 				ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressbar);
 				progressBar.setVisibility(View.VISIBLE);
 				One.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
@@ -79,7 +79,7 @@ public class play extends Activity {
 		Two.setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View arg0) {
-				findViewById(R.id.youarewatching).setVisibility(View.VISIBLE);
+//				findViewById(R.id.youarewatching).setVisibility(View.VISIBLE);
 				ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressbar);
 				progressBar.setVisibility(View.VISIBLE);
 				Two.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
@@ -97,7 +97,7 @@ public class play extends Activity {
 		Three.setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View arg0) {
-				findViewById(R.id.youarewatching).setVisibility(View.VISIBLE);
+//				findViewById(R.id.youarewatching).setVisibility(View.VISIBLE);
 				ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressbar);
 				progressBar.setVisibility(View.VISIBLE);
 				Three.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
@@ -117,7 +117,7 @@ public class play extends Activity {
 		Four.setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View arg0) {
-				findViewById(R.id.youarewatching).setVisibility(View.VISIBLE);
+//				findViewById(R.id.youarewatching).setVisibility(View.VISIBLE);
 				ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressbar);
 				progressBar.setVisibility(View.VISIBLE);
 				Four.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);

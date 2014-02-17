@@ -4,7 +4,8 @@
     android:layout_height="match_parent"
     android:baselineAligned="false"
     android:orientation="vertical"
-    tools:context=".VideoPlayerActivity" >
+    tools:context=".VideoPlayerActivity" 
+    android:background="@drawable/blueBackgroundTwo" >
 
     <VideoView
         android:id="@+id/videoContent"
