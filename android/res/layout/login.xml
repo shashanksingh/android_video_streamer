@@ -9,7 +9,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical" 
     tools:context=".signup" 
-    android:background="@drawable/blueBackgroundTwo" >
+    android:background="@drawable/bluebackgroundtwo" >
 
     <TextView
         android:id="@+id/textView1"

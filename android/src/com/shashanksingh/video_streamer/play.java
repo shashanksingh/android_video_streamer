@@ -1,6 +1,7 @@
 package com.shashanksingh.video_streamer;
 
 import android.app.Activity;
+import android.content.res.Configuration;
 import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnPreparedListener;
 import android.media.MediaPlayer.OnVideoSizeChangedListener;
@@ -12,12 +13,45 @@ import android.view.SoundEffectConstants;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 //import android.widget.MediaController;
 import android.widget.VideoView;
 
 public class play extends Activity {
+
+	@Override
+	public void onConfigurationChanged(Configuration newConfig) {
+		final ImageView One = (ImageView) findViewById(R.id.info);
+		final ImageView Two = (ImageView) findViewById(R.id.news);
+		final ImageView Three = (ImageView) findViewById(R.id.bollywood);
+		final ImageView Four = (ImageView) findViewById(R.id.khabar);
+		final VideoView mVideoView  = (VideoView)findViewById(R.id.videoContent);
+		
+	    super.onConfigurationChanged(newConfig);
+
+	    // Checks the orientation of the screen
+	    if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
+	        Toast.makeText(this, "Making Video Full Screen", Toast.LENGTH_SHORT).show();
+	        One.setVisibility(0);
+	        Two.setVisibility(0);
+	        Three.setVisibility(0);
+	        Four.setVisibility(0);
+			getWindow().clearFlags(WindowManager
+					.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN);
+			getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+					WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+	        
+	    } else if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT){
+	        Toast.makeText(this, "Back To Controls", Toast.LENGTH_SHORT).show();
+			getWindow().setFlags(WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN, 
+					WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN);
+			getWindow().clearFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
+	    }
+	}
 
 	/** Called when the activity is first created. */
 	@Override
@@ -26,12 +60,13 @@ public class play extends Activity {
 	    //We want as much space as possible
 	    requestWindowFeature(Window.FEATURE_NO_TITLE);
 	    setContentView(R.layout.play);
-
 		final ImageView One = (ImageView) findViewById(R.id.info);
 		final ImageView Two = (ImageView) findViewById(R.id.news);
 		final ImageView Three = (ImageView) findViewById(R.id.bollywood);
 		final ImageView Four = (ImageView) findViewById(R.id.khabar);
 		final VideoView mVideoView  = (VideoView)findViewById(R.id.videoContent);
+		
+
 		ProgressBar mProgressBar = (ProgressBar) findViewById(R.id.progressbar);
 	    mProgressBar.setIndeterminate(true);
 	    mProgressBar.setMax(100);
@@ -133,5 +168,7 @@ public class play extends Activity {
 			    mVideoView.start();
 			}
 		});
+		
+		
 	}
 }

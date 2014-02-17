@@ -5,7 +5,8 @@
     android:baselineAligned="false"
     android:orientation="vertical"
     tools:context=".VideoPlayerActivity" 
-    android:background="@drawable/blueBackgroundTwo" >
+    android:background="@drawable/bluebackgroundtwo"
+    android:configChanges="keyboard|keyboardHidden|orientation|screenSize">
 
     <VideoView
         android:id="@+id/videoContent"
@@ -32,34 +33,36 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
-         <ImageView
-             android:id="@+id/info"
-             android:layout_width="75dp"
-             android:layout_height="60dp"
-             android:contentDescription="@string/info"
-             android:src="@drawable/info" />
-         
+        <ImageView
+            android:id="@+id/info"
+            android:layout_width="75dp"
+            android:layout_height="60dp"
+            android:contentDescription="@string/info"
+            android:src="@drawable/info" />
+
         <ImageView
             android:id="@+id/news"
             android:layout_width="75dp"
             android:layout_height="60dp"
+            android:layout_weight="0.02"
             android:contentDescription="@string/news"
             android:src="@drawable/news" />
-        
-       <ImageView
-           android:id="@+id/bollywood"
-           android:layout_width="75dp"
-           android:layout_height="60dp"
-           android:contentDescription="@string/bollywood"
-           android:src="@drawable/bollywood" />
+
+        <ImageView
+            android:id="@+id/bollywood"
+            android:layout_width="75dp"
+            android:layout_height="60dp"
+            android:layout_weight="0.02"
+            android:contentDescription="@string/bollywood"
+            android:src="@drawable/bollywood" />
 
         <ImageView
             android:id="@+id/khabar"
             android:layout_width="75dp"
             android:layout_height="60dp"
+            android:layout_weight="0.04"
             android:contentDescription="@string/khabar"
             android:src="@drawable/khabar" />
-
     </LinearLayout>
 
 </LinearLayout>

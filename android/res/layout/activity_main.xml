@@ -1,7 +1,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/blueBackgroundTwo" >
+    android:background="@drawable/bluebackgroundtwo" >
 
 <RelativeLayout 
     android:layout_width="match_parent"
@@ -11,24 +11,17 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
      >
+     
 
-    <ImageView
-        android:id="@+id/imageView1"
+
+     <TextView
+        android:id="@+id/introText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/logoVideo"
         android:layout_centerHorizontal="true"
-        android:contentDescription="@string/logo"
-        android:src="@drawable/logo" />
-
-    <Button
-        android:id="@+id/login"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/play"
-        android:layout_marginTop="19dp"
-        android:text="@string/login" />
+        android:layout_marginTop="14dp"
+        android:text="@string/watchlive" />
 
     <Button
         android:id="@+id/signup"
@@ -36,26 +29,32 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/login"
         android:layout_below="@+id/login"
-        android:layout_marginTop="26dp"
+        android:layout_marginTop="14dp"
         android:text="@string/signup" />
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="14dp"
-        android:text="@string/watchlive" />
+    <VideoView
+        android:id="@+id/logoVideo"
+        android:layout_width="256dip"
+        android:layout_height="192dip"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:id="@+id/play"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/login"
-        android:layout_below="@+id/textView1"
-        android:layout_marginTop="16dp"
+        android:layout_below="@+id/introText"
         android:text="@string/play" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/play"
+        android:layout_marginTop="14dp"
+        android:text="@string/login" />
 
 </RelativeLayout>
 
