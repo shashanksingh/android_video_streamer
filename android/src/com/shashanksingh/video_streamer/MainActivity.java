@@ -20,15 +20,7 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-//	    <ImageView
-//        android:id="@+id/logoImage"
-//        android:layout_width="wrap_content"
-//        android:layout_height="wrap_content"
-//        android:layout_alignParentTop="true"
-//        android:layout_centerHorizontal="true"
-//        android:contentDescription="@string/logo"
-//        android:visibility="gone"
-//        android:src="@drawable/logo" />
+
 		//buttonLogin = findViewById(R.id.)
 		Button buttonPlay = (Button) findViewById(R.id.play);
 		Button buttonSignup = (Button) findViewById(R.id.signup);
