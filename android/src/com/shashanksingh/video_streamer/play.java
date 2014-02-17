@@ -90,7 +90,7 @@ public class play extends Activity {
 			}
 		});
 
-		//Info
+		//Info --> events
 		One.setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View arg0) {
@@ -99,6 +99,7 @@ public class play extends Activity {
 				progressBar.setVisibility(View.VISIBLE);
 				One.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
 			    One.playSoundEffect(SoundEffectConstants.CLICK);
+			    Toast.makeText(play.this, "Playing Channel: Events", Toast.LENGTH_SHORT).show();
 			    String URL = "http://download.wavetlan.com/SVV/Media/HTTP/H264/Other_Media/H264_test5_voice_3gp_480x360.3gp";
 			    Uri uri = Uri.parse(URL); //Declare your Url here  
 			    mVideoView.pause();
@@ -117,6 +118,7 @@ public class play extends Activity {
 				progressBar.setVisibility(View.VISIBLE);
 				Two.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
 			    Two.playSoundEffect(SoundEffectConstants.CLICK);
+			    Toast.makeText(play.this, "Playing Channel: English News", Toast.LENGTH_SHORT).show();
 			    String URL = "http://www.pocketjourney.com/downloads/pj/video/famous.3gp";
 			    Uri uri = Uri.parse(URL); //Declare your Url here.
 			    mVideoView.pause();
@@ -135,6 +137,7 @@ public class play extends Activity {
 				progressBar.setVisibility(View.VISIBLE);
 				Three.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
 			    Three.playSoundEffect(SoundEffectConstants.CLICK);
+			    Toast.makeText(play.this, "Playing Channel: Bollywood", Toast.LENGTH_SHORT).show();
 //			    String URL= "http://techslides.com/demos/sample-videos/small.3gp";
 			    //Jateshwar song
 			    String URL = "http://mineral-hangar-418.appspot.com/serve/AMIfv96ih2c3tHoraamA4NJq0KWIT4cJGLftK_H5jlDJkqqeY-mDWcbbKGe9c6F7K8DsWdUyADkfpXaBIluCf-Lq9lalmmWPOwkoQjjaX5fHVZ-WiJzrYpSOXT1kp1mCrwEYHlLT6uplnmfUNmIMN4WjOLFBa45Tq24D5GlbtzUMIzGGaNvRYHE";
@@ -155,6 +158,7 @@ public class play extends Activity {
 				progressBar.setVisibility(View.VISIBLE);
 				Four.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
 			    Four.playSoundEffect(SoundEffectConstants.CLICK);
+			    Toast.makeText(play.this, "Playing Channel: Bengali News", Toast.LENGTH_SHORT).show();
 //			    String URL = "http://download.wavetlan.com/SVV/Media/HTTP/H264/Other_Media/dolphins_1600k.3gp";
 //			    String URL = "http://download.wavetlan.com/SVV/Media/HTTP/H264/Other_Media/H264_test6_voice_3gp_480x320.3gp";
 			    String URL = "http://mineral-hangar-418.appspot.com/serve/AMIfv977vPOxo7MiUCojkhlsGVVArO3mYO4rQOG8EKEYW0i7D3rYacrGlqnSTWMNLPhEZRZSGap-xE3yFLA0dqZLd8OnGyonAj4R_hWo30QqV9or6TkmaGqqWsNfyiAQsq9QJKbg4L7MJcdqVIgaDTPb6D1bxczemTYtuO3pG7BUOyVGst1yDrs";//award function
