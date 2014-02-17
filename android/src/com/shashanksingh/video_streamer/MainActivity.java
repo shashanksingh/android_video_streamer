@@ -64,7 +64,7 @@ public class MainActivity extends Activity {
 				VideoView videoView = (VideoView) findViewById(R.id.logoVideo);
 				ImageView imageView = (ImageView) findViewById(R.id.logoImage);
 				videoView.setVisibility(View.GONE);
-				imageView.setVisibility(View.VISIBLE);	
+				imageView.setVisibility(View.VISIBLE);
 			}
 			
 		});

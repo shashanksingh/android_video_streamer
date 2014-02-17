@@ -18,15 +18,16 @@
         <activity
             android:name="com.shashanksingh.video_streamer.MainActivity"
             android:label="@string/app_name" 
+            android:screenOrientation="landscape"
             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="login"></activity>
-        <activity android:name="signup"></activity>
-        <activity android:name="play"></activity>
+        <activity android:name="login" android:screenOrientation="landscape"></activity>
+        <activity android:name="signup" android:screenOrientation="landscape"></activity>
+        <activity android:name="play" android:screenOrientation="landscape"></activity>
     </application>
 
 </manifest>

@@ -36,7 +36,7 @@
         android:id="@+id/logoVideo"
         android:layout_width="256dip"
         android:layout_height="192dip"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/logoImage"
         android:layout_centerHorizontal="true" />
     
     <ImageView
