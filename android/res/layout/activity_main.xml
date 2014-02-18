@@ -34,8 +34,8 @@
 
     <VideoView
         android:id="@+id/logoVideo"
-        android:layout_width="256dip"
-        android:layout_height="192dip"
+        android:layout_width="wrap_content"
+        android:layout_height="98dp"
         android:layout_below="@+id/logoImage"
         android:layout_centerHorizontal="true" />
     

@@ -100,7 +100,7 @@ public class play extends Activity {
 				One.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
 			    One.playSoundEffect(SoundEffectConstants.CLICK);
 			    Toast.makeText(play.this, "Playing Channel: Events", Toast.LENGTH_SHORT).show();
-			    String URL = "http://download.wavetlan.com/SVV/Media/HTTP/H264/Other_Media/H264_test5_voice_3gp_480x360.3gp";
+			    String URL = "http://mineral-hangar-418.appspot.com/serve/AMIfv94RiGkrU-NxrkaAjxblAbExc7FpAtM-tD44_xAaetkj9HU0qIasl1GVPGBYJhEQKSz-ICI_TkXCK5-76K6LICPgxE9hvKWtR57naO4W0irFUWQ2jkNcCsETDfPrwB-DwUzKjHVnJEbr61Th6DlA7JFCEwKf67XeixWeUXz-HuLU1JxhNM8";
 			    Uri uri = Uri.parse(URL); //Declare your Url here  
 			    mVideoView.pause();
 			    mVideoView.setMediaController(null);       
@@ -109,7 +109,7 @@ public class play extends Activity {
 			    mVideoView.start();
 			}
 		});
-		//English News
+		//Hindi News
 		Two.setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View arg0) {
@@ -118,8 +118,8 @@ public class play extends Activity {
 				progressBar.setVisibility(View.VISIBLE);
 				Two.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
 			    Two.playSoundEffect(SoundEffectConstants.CLICK);
-			    Toast.makeText(play.this, "Playing Channel: English News", Toast.LENGTH_SHORT).show();
-			    String URL = "http://www.pocketjourney.com/downloads/pj/video/famous.3gp";
+			    Toast.makeText(play.this, "Playing Channel: Hindi News", Toast.LENGTH_SHORT).show();
+			    String URL = "http://mineral-hangar-418.appspot.com/serve/AMIfv95aQfcunqOBZc3XrD0I9AepyQqO902qM2LDN42irskYf7xJEOdkZSKdWzagAGYN8WgVdf0s8_DEJXvfNPMgP239_muLn4ItZIwAC2VjYzrtHLYOqyq-Q0WtdTU-YhpIwsRcwsAJQOAi3q22b1HbUu2PZv2e79KE3G7sZO9QzUtdaRMF39s";
 			    Uri uri = Uri.parse(URL); //Declare your Url here.
 			    mVideoView.pause();
 			    mVideoView.setMediaController(null);       
@@ -161,7 +161,7 @@ public class play extends Activity {
 			    Toast.makeText(play.this, "Playing Channel: Bengali News", Toast.LENGTH_SHORT).show();
 //			    String URL = "http://download.wavetlan.com/SVV/Media/HTTP/H264/Other_Media/dolphins_1600k.3gp";
 //			    String URL = "http://download.wavetlan.com/SVV/Media/HTTP/H264/Other_Media/H264_test6_voice_3gp_480x320.3gp";
-			    String URL = "http://mineral-hangar-418.appspot.com/serve/AMIfv977vPOxo7MiUCojkhlsGVVArO3mYO4rQOG8EKEYW0i7D3rYacrGlqnSTWMNLPhEZRZSGap-xE3yFLA0dqZLd8OnGyonAj4R_hWo30QqV9or6TkmaGqqWsNfyiAQsq9QJKbg4L7MJcdqVIgaDTPb6D1bxczemTYtuO3pG7BUOyVGst1yDrs";//award function
+			    String URL = "http://mineral-hangar-418.appspot.com/serve/AMIfv97_O1AGJTa47r1JJGpCOZttd64cvVmnSQ37O8S1CEK3HmYU9WZqS6xsReKwd76BPEtIhYv_Nw3eLNyYJ_imJlngqFsmuGS09AlQhcjoL5UrE5czdhlDOt0u1iR57rHMJ9JVO6T2YzdXEZJ5oTVJ0hwW90eCr_1SU57I6cHQ2iU6DGh19UA";
 			    Uri uri = Uri.parse(URL); //Declare your Url here.
 			    mVideoView.pause();
 			    mVideoView.setMediaController(null);       
