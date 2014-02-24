@@ -16,6 +16,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 //import android.widget.MediaController;
 import android.widget.VideoView;
@@ -28,6 +29,7 @@ public class play extends Activity {
 		final ImageView Two = (ImageView) findViewById(R.id.news);
 		final ImageView Three = (ImageView) findViewById(R.id.bollywood);
 		final ImageView Four = (ImageView) findViewById(R.id.khabar);
+		
 		super.onConfigurationChanged(newConfig);
 
 	    // Checks the orientation of the screen
@@ -63,13 +65,15 @@ public class play extends Activity {
 		final ImageView Three = (ImageView) findViewById(R.id.bollywood);
 		final ImageView Four = (ImageView) findViewById(R.id.khabar);
 		final VideoView mVideoView  = (VideoView)findViewById(R.id.videoContent);
+		final TextView mTextView = (TextView)findViewById(R.id.watching);
+		final String youarewatching = getResources().getString(R.string.youarewatching);
+
 		
 
 		ProgressBar mProgressBar = (ProgressBar) findViewById(R.id.progressbar);
 	    mProgressBar.setIndeterminate(true);
 	    mProgressBar.setMax(100);
 	    mProgressBar.setProgress(100);
-	    
         mVideoView.setOnPreparedListener(new OnPreparedListener(){
 
 			@Override
@@ -99,6 +103,7 @@ public class play extends Activity {
 				progressBar.setVisibility(View.VISIBLE);
 				One.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
 			    One.playSoundEffect(SoundEffectConstants.CLICK);
+			    mTextView.setText(youarewatching + "Events" );
 			    Toast.makeText(play.this, "Playing Channel: Events", Toast.LENGTH_SHORT).show();
 			    String URL = "http://mineral-hangar-418.appspot.com/serve/AMIfv94RiGkrU-NxrkaAjxblAbExc7FpAtM-tD44_xAaetkj9HU0qIasl1GVPGBYJhEQKSz-ICI_TkXCK5-76K6LICPgxE9hvKWtR57naO4W0irFUWQ2jkNcCsETDfPrwB-DwUzKjHVnJEbr61Th6DlA7JFCEwKf67XeixWeUXz-HuLU1JxhNM8";
 			    Uri uri = Uri.parse(URL); //Declare your Url here  
@@ -118,6 +123,7 @@ public class play extends Activity {
 				progressBar.setVisibility(View.VISIBLE);
 				Two.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
 			    Two.playSoundEffect(SoundEffectConstants.CLICK);
+			    mTextView.setText(youarewatching + "Hindi News" );
 			    Toast.makeText(play.this, "Playing Channel: Hindi News", Toast.LENGTH_SHORT).show();
 			    String URL = "http://mineral-hangar-418.appspot.com/serve/AMIfv95aQfcunqOBZc3XrD0I9AepyQqO902qM2LDN42irskYf7xJEOdkZSKdWzagAGYN8WgVdf0s8_DEJXvfNPMgP239_muLn4ItZIwAC2VjYzrtHLYOqyq-Q0WtdTU-YhpIwsRcwsAJQOAi3q22b1HbUu2PZv2e79KE3G7sZO9QzUtdaRMF39s";
 			    Uri uri = Uri.parse(URL); //Declare your Url here.
@@ -137,6 +143,7 @@ public class play extends Activity {
 				progressBar.setVisibility(View.VISIBLE);
 				Three.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
 			    Three.playSoundEffect(SoundEffectConstants.CLICK);
+			    mTextView.setText(youarewatching + "Bollywood" );
 			    Toast.makeText(play.this, "Playing Channel: Bollywood", Toast.LENGTH_SHORT).show();
 //			    String URL= "http://techslides.com/demos/sample-videos/small.3gp";
 			    //Jateshwar song
@@ -158,6 +165,7 @@ public class play extends Activity {
 				progressBar.setVisibility(View.VISIBLE);
 				Four.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
 			    Four.playSoundEffect(SoundEffectConstants.CLICK);
+			    mTextView.setText(youarewatching + "Bengali News" );
 			    Toast.makeText(play.this, "Playing Channel: Bengali News", Toast.LENGTH_SHORT).show();
 //			    String URL = "http://download.wavetlan.com/SVV/Media/HTTP/H264/Other_Media/dolphins_1600k.3gp";
 //			    String URL = "http://download.wavetlan.com/SVV/Media/HTTP/H264/Other_Media/H264_test6_voice_3gp_480x320.3gp";
