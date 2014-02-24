@@ -38,7 +38,7 @@
             android:layout_width="75dp"
             android:layout_height="60dp"
             android:contentDescription="@string/info"
-            android:src="@drawable/info" />
+            android:src="@drawable/events" />
 
         <ImageView
             android:id="@+id/news"
