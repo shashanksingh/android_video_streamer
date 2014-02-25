@@ -11,13 +11,15 @@
     <string name="play">Play</string>
     <string name="login">Login</string>
     <string name="signup">Signup</string>
-    <string name="youarewatching">You Are Watching : </string>
+    <string name="youarewatching">You Are Watching : Siti </string>
     <string name="pleaseselectachannel">Please select a channel</string>
     <string name="watchlive">Watch Live Channels from Siti Kolkata</string>
     <string name="logo">Sity Cable</string>
     <string name="submit">Submit</string>
     <string name="password">Password</string>
     <string name="email">Email</string>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
 
 </resources>
 

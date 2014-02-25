@@ -8,6 +8,8 @@ import android.media.MediaPlayer.OnCompletionListener;
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
@@ -17,6 +19,26 @@ import android.widget.ImageView;
 import android.widget.VideoView;
 
 public class MainActivity extends Activity {
+    @Override
+    public void onBackPressed() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+        builder.setMessage("Do you really want to exit?.").setCancelable(
+                false).setPositiveButton("Quit",
+                        new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                                            MainActivity.this.finish();
+
+                    }
+                }).setNegativeButton("Cancel",
+                        new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+
+                    }
+                });
+        AlertDialog alert = builder.create();
+        alert.show();
+
+    }
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
