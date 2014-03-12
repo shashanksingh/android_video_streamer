@@ -28,6 +28,11 @@
         <activity android:name="login" android:screenOrientation="portrait"></activity>
         <activity android:name="signup" android:screenOrientation="portrait"></activity>
         <activity android:name="play" android:screenOrientation="portrait"></activity>
+        <activity android:name="io.vov.vitamio.activity.InitActivity" 
+		  android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden"
+		  android:launchMode="singleTop"
+		  android:theme="@android:style/Theme.NoTitleBar"
+		  android:windowSoftInputMode="stateAlwaysHidden"/>
     </application>
 
 </manifest>

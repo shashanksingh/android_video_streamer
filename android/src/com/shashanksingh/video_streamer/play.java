@@ -58,6 +58,8 @@ public class play extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 	    super.onCreate(savedInstanceState);
 	    //We want as much space as possible
+	    if (!io.vov.vitamio.LibsChecker.checkVitamioLibs(this))
+	        return;
 	    requestWindowFeature(Window.FEATURE_NO_TITLE);
 	    setContentView(R.layout.play);
 		final ImageView One = (ImageView) findViewById(R.id.info);
